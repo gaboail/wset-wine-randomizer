@@ -423,61 +423,168 @@
     </div>
 
     <script>
-        // Wine database with type, country, and region information
-        const wineDatabase = [
-            // RED WINES - FRANCE
-            { name: "Bordeaux - Médoc", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Bordeaux - St. Émilion/Pomerol", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Bordeaux - Graves/Pessac-Léognan", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Burgundy - Côte d'Or", type: "red", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Beaujolais Crus", type: "red", country: "France", region: "Burgundy" },
-            { name: "Northern Rhône - Côte-Rôtie", type: "red", country: "France", region: "Rhône" },
-            { name: "Northern Rhône - Hermitage", type: "red", country: "France", region: "Rhône" },
-            { name: "Southern Rhône - Châteauneuf-du-Pape", type: "red", country: "France", region: "Rhône" },
-            { name: "Loire Valley - Chinon/Saumur-Champigny", type: "red", country: "France", region: "Loire" },
-            
-            // RED WINES - ITALY
-            { name: "Barolo DOCG", type: "red", country: "Italy", region: "Piedmont" },
-            { name: "Barbaresco DOCG", type: "red", country: "Italy", region: "Piedmont" },
-            { name: "Chianti Classico DOCG", type: "red", country: "Italy", region: "Tuscany" },
-            { name: "Brunello di Montalcino DOCG", type: "red", country: "Italy", region: "Tuscany" },
-            { name: "Valpolicella/Amarone della Valpolicella DOCG", type: "red", country: "Italy", region: "Veneto" },
-            
-            // RED WINES - SPAIN & PORTUGAL
-            { name: "Rioja DOCa", type: "red", country: "Spain", region: "Rioja" },
-            { name: "Ribera del Duero DO", type: "red", country: "Spain", region: "Castilla y León" },
-            { name: "Priorat DOCa", type: "red", country: "Spain", region: "Catalonia" },
-            { name: "Douro DOC (Red)", type: "red", country: "Portugal", region: "Douro" },
-            
-            // RED WINES - GERMANY
-            { name: "Mosel Riesling (Dry)", type: "red", country: "Germany", region: "Mosel" },
-            
-            // RED WINES - USA
-            { name: "Napa Valley Cabernet Sauvignon", type: "red", country: "USA", region: "California" },
-            { name: "Sonoma County Zinfandel", type: "red", country: "USA", region: "California" },
-            { name: "Oregon Pinot Noir", type: "red", country: "USA", region: "Oregon" },
-            { name: "Washington State Cabernet Sauvignon/Merlot", type: "red", country: "USA", region: "Washington" },
-            
-            // RED WINES - SOUTH AMERICA
-            { name: "Mendoza Malbec", type: "red", country: "Argentina", region: "Mendoza" },
-            { name: "Chile - Maipo/Colchagua Valley Cabernet Sauvignon", type: "red", country: "Chile", region: "Central Valley" },
-            { name: "Chile - Casablanca Valley Pinot Noir", type: "red", country: "Chile", region: "Casablanca" },
-            
-            // RED WINES - SOUTH AFRICA
-            { name: "South Africa - Stellenbosch Cabernet Sauvignon", type: "red", country: "South Africa", region: "Coastal Region" },
-            { name: "South Africa - Walker Bay Pinot Noir", type: "red", country: "South Africa", region: "Cape South Coast" },
-            
-            // RED WINES - AUSTRALIA & NEW ZEALAND
-            { name: "Australia - Barossa Valley Shiraz", type: "red", country: "Australia", region: "South Australia" },
-            { name: "Australia - Coonawarra Cabernet Sauvignon", type: "red", country: "Australia", region: "South Australia" },
-            { name: "Australia - Yarra Valley Pinot Noir", type: "red", country: "Australia", region: "Victoria" },
-            { name: "New Zealand - Central Otago Pinot Noir", type: "red", country: "New Zealand", region: "South Island" },
-            { name: "New Zealand - Hawke's Bay Syrah", type: "red", country: "New Zealand", region: "North Island" },
-            
-            // WHITE WINES - FRANCE
-            { name: "Chablis AOC/Premier Cru/Grand Cru", type: "white", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Côte d'Or (White)", type: "white", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Mâconnais", type: "white", country: "France", region: "Burgundy" },
-            { name: "Loire Valley - Sancerre/Pouilly-Fumé", type: "white", country: "France", region: "Loire" },
-            { name: "Loire Valley - Vouvray/Chenin Blanc", type: "white", country: "France", region: "Loire" },
-            { name: "Alsace - Riesling/Gewurztraminer
+// All JavaScript code goes here
+...
+</script>
+    // Create filtered lists by type
+const wineList = {
+    all: wineDatabase.map(wine => wine.name),
+    red: wineDatabase.filter(wine => wine.type === "red").map(wine => wine.name),
+    white: wineDatabase.filter(wine => wine.type === "white").map(wine => wine.name),
+    sparkling: wineDatabase.filter(wine => wine.type === "sparkling").map(wine => wine.name),
+    fortified: wineDatabase.filter(wine => wine.type === "fortified").map(wine => wine.name)
+};
+
+// Initialize variables
+let selectedWines = JSON.parse(localStorage.getItem('selectedWines')) || [];
+const resultDiv = document.getElementById('result');
+const historyList = document.getElementById('historyList');
+const categorySelect = document.getElementById('category');
+const countrySelect = document.getElementById('country');
+const regionSelect = document.getElementById('region');
+
+// Populate countries dropdown
+function populateCountries() {
+    const countries = [...new Set(wineDatabase.map(wine => wine.country))].sort();
+    countrySelect.innerHTML = '<option value="all">All Countries</option>';
+    
+    countries.forEach(country => {
+        const option = document.createElement('option');
+        option.value = country;
+        option.textContent = country;
+        countrySelect.appendChild(option);
+    });
+}
+
+// Populate regions dropdown based on selected country
+function populateRegions(selectedCountry) {
+    let regions;
+    
+    if (selectedCountry === 'all') {
+        regions = [...new Set(wineDatabase.map(wine => wine.region))].sort();
+    } else {
+        regions = [...new Set(wineDatabase
+            .filter(wine => wine.country === selectedCountry)
+            .map(wine => wine.region))].sort();
+    }
+    
+    regionSelect.innerHTML = '<option value="all">All Regions</option>';
+    
+    regions.forEach(region => {
+        const option = document.createElement('option');
+        option.value = region;
+        option.textContent = region;
+        regionSelect.appendChild(option);
+    });
+}
+
+// Initialize dropdowns
+populateCountries();
+populateRegions('all');
+
+// Handle country change
+countrySelect.addEventListener('change', function() {
+    populateRegions(this.value);
+});
+
+// Tab functionality
+function openTab(tabName) {
+    const tabContents = document.getElementsByClassName('tab-content');
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+    }
+    
+    const tabs = document.getElementsByClassName('tab');
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+    }
+    
+    document.getElementById(tabName).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+// Toggle more wines
+function toggleMoreWines() {
+    const moreWines = document.getElementById('moreWines');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    
+    if (moreWines.style.display === 'none') {
+        moreWines.style.display = 'block';
+        loadMoreBtn.textContent = 'Show Less';
+    } else {
+        moreWines.style.display = 'none';
+        loadMoreBtn.textContent = 'Load More Wines';
+    }
+}
+
+// Generate random wine button event
+document.getElementById('generateBtn').addEventListener('click', function() {
+    const selectedType = categorySelect.value;
+    const selectedCountry = countrySelect.value;
+    const selectedRegion = regionSelect.value;
+    
+    // Filter wines based on selections
+    let filteredWines = wineDatabase;
+    
+    if (selectedType !== 'all') {
+        filteredWines = filteredWines.filter(wine => wine.type === selectedType);
+    }
+    
+    if (selectedCountry !== 'all') {
+        filteredWines = filteredWines.filter(wine => wine.country === selectedCountry);
+    }
+    
+    if (selectedRegion !== 'all') {
+        filteredWines = filteredWines.filter(wine => wine.region === selectedRegion);
+    }
+    
+    // Get wine names and filter out already selected ones
+    const wineNames = filteredWines.map(wine => wine.name);
+    const availableWines = wineNames.filter(wine => !selectedWines.includes(wine));
+    
+    if (availableWines.length === 0) {
+        resultDiv.innerHTML = "All wines from this category have been selected! Reset history to start over.";
+        return;
+    }
+    
+    const randomIndex = Math.floor(Math.random() * availableWines.length);
+    const randomWine = availableWines[randomIndex];
+    
+    resultDiv.innerHTML = `<strong>${randomWine}</strong>`;
+    
+    // Add to history
+    selectedWines.push(randomWine);
+    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+    
+    // Update history list
+    updateHistoryList();
+});
+
+// Reset history button event
+document.getElementById('resetBtn').addEventListener('click', function() {
+    selectedWines = [];
+    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+    resultDiv.innerHTML = "Your randomly selected wine will appear here";
+    updateHistoryList();
+});
+
+// Function to update history list
+function updateHistoryList() {
+    if (selectedWines.length === 0) {
+        historyList.innerHTML = '<div class="history-item">No wines selected yet</div>';
+        return;
+    }
+    
+    historyList.innerHTML = '';
+    selectedWines.slice().reverse().forEach(wine => {
+        const item = document.createElement('div');
+        item.className = 'history-item';
+        item.textContent = wine;
+        historyList.appendChild(item);
+    });
+}
+
+// Initialize history list on page load
+updateHistoryList();
+</body>
+</html>
