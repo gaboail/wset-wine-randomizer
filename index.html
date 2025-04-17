@@ -183,302 +183,111 @@
     </div>
 
     <script>
-        // Wine database with type, country, and region information
-        const wineDatabase = [
-            // RED WINES - FRANCE
-            { name: "Bordeaux - Médoc", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Bordeaux - St. Émilion/Pomerol", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Bordeaux - Graves/Pessac-Léognan", type: "red", country: "France", region: "Bordeaux" },
-            { name: "Burgundy - Côte d'Or", type: "red", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Beaujolais Crus", type: "red", country: "France", region: "Burgundy" },
-            { name: "Northern Rhône - Côte-Rôtie", type: "red", country: "France", region: "Rhône" },
-            { name: "Northern Rhône - Hermitage", type: "red", country: "France", region: "Rhône" },
-            { name: "Southern Rhône - Châteauneuf-du-Pape", type: "red", country: "France", region: "Rhône" },
-            { name: "Loire Valley - Chinon/Saumur-Champigny", type: "red", country: "France", region: "Loire" },
-            
-            // RED WINES - ITALY
-            { name: "Barolo DOCG", type: "red", country: "Italy", region: "Piedmont" },
-            { name: "Barbaresco DOCG", type: "red", country: "Italy", region: "Piedmont" },
-            { name: "Chianti Classico DOCG", type: "red", country: "Italy", region: "Tuscany" },
-            { name: "Brunello di Montalcino DOCG", type: "red", country: "Italy", region: "Tuscany" },
-            { name: "Valpolicella/Amarone della Valpolicella DOCG", type: "red", country: "Italy", region: "Veneto" },
-            
-            // RED WINES - SPAIN & PORTUGAL
-            { name: "Rioja DOCa", type: "red", country: "Spain", region: "Rioja" },
-            { name: "Ribera del Duero DO", type: "red", country: "Spain", region: "Castilla y León" },
-            { name: "Priorat DOCa", type: "red", country: "Spain", region: "Catalonia" },
-            { name: "Douro DOC (Red)", type: "red", country: "Portugal", region: "Douro" },
-            
-            // RED WINES - USA
-            { name: "Napa Valley Cabernet Sauvignon", type: "red", country: "USA", region: "California" },
-            { name: "Sonoma County Zinfandel", type: "red", country: "USA", region: "California" },
-            { name: "Oregon Pinot Noir", type: "red", country: "USA", region: "Oregon" },
-            { name: "Washington State Cabernet Sauvignon/Merlot", type: "red", country: "USA", region: "Washington" },
-            
-            // RED WINES - SOUTH AMERICA
-            { name: "Mendoza Malbec", type: "red", country: "Argentina", region: "Mendoza" },
-            { name: "Chile - Maipo/Colchagua Valley Cabernet Sauvignon", type: "red", country: "Chile", region: "Central Valley" },
-            { name: "Chile - Casablanca Valley Pinot Noir", type: "red", country: "Chile", region: "Casablanca" },
-            
-            // RED WINES - SOUTH AFRICA
-            { name: "South Africa - Stellenbosch Cabernet Sauvignon", type: "red", country: "South Africa", region: "Coastal Region" },
-            { name: "South Africa - Walker Bay Pinot Noir", type: "red", country: "South Africa", region: "Cape South Coast" },
-            
-            // RED WINES - AUSTRALIA & NEW ZEALAND
-            { name: "Australia - Barossa Valley Shiraz", type: "red", country: "Australia", region: "South Australia" },
-            { name: "Australia - Coonawarra Cabernet Sauvignon", type: "red", country: "Australia", region: "South Australia" },
-            { name: "Australia - Yarra Valley Pinot Noir", type: "red", country: "Australia", region: "Victoria" },
-            { name: "New Zealand - Central Otago Pinot Noir", type: "red", country: "New Zealand", region: "South Island" },
-            { name: "New Zealand - Hawke's Bay Syrah", type: "red", country: "New Zealand", region: "North Island" },
-            
-            // WHITE WINES - FRANCE
-            { name: "Chablis AOC/Premier Cru/Grand Cru", type: "white", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Côte d'Or (White)", type: "white", country: "France", region: "Burgundy" },
-            { name: "Burgundy - Mâconnais", type: "white", country: "France", region: "Burgundy" },
-            { name: "Loire Valley - Sancerre/Pouilly-Fumé", type: "white", country: "France", region: "Loire" },
-            { name: "Loire Valley - Vouvray/Chenin Blanc", type: "white", country: "France", region: "Loire" },
-            { name: "Alsace - Riesling/Gewurztraminer/Pinot Gris", type: "white", country: "France", region: "Alsace" },
-            { name: "Northern Rhône - Condrieu (Viognier)", type: "white", country: "France", region: "Rhône" },
-            { name: "Bordeaux - White (Sauvignon Blanc/Semillon)", type: "white", country: "France", region: "Bordeaux" },
-            
-            // WHITE WINES - ITALY & SPAIN
-            { name: "Soave Classico DOC", type: "white", country: "Italy", region: "Veneto" },
-            { name: "Gavi DOCG", type: "white", country: "Italy", region: "Piedmont" },
-            { name: "Albariño - Rías Baixas DO", type: "white", country: "Spain", region: "Galicia" },
-            { name: "Rueda DO (Verdejo)", type: "white", country: "Spain", region: "Castilla y León" },
-            
-            // WHITE WINES - GERMANY & AUSTRIA
-            { name: "Mosel Riesling (Off-Dry/Sweet)", type: "white", country: "Germany", region: "Mosel" },
-            { name: "Rheingau/Pfalz Riesling", type: "white", country: "Germany", region: "Rheingau/Pfalz" },
-            { name: "Austrian Grüner Veltliner", type: "white", country: "Austria", region: "Niederösterreich" },
-            
-            // WHITE WINES - USA
-            { name: "Napa Valley Chardonnay", type: "white", country: "USA", region: "California" },
-            { name: "Sonoma County Chardonnay", type: "white", country: "USA", region: "California" },
-            { name: "Santa Barbara Chardonnay", type: "white", country: "USA", region: "California" },
-            { name: "Washington State Riesling", type: "white", country: "USA", region: "Washington" },
-            
-            // WHITE WINES - CHILE & SOUTH AFRICA
-            { name: "Chile - Casablanca/San Antonio Valley Sauvignon Blanc", type: "white", country: "Chile", region: "Aconcagua" },
-            { name: "South Africa - Stellenbosch Chenin Blanc", type: "white", country: "South Africa", region: "Coastal Region" },
-            { name: "South Africa - Elgin/Walker Bay Chardonnay", type: "white", country: "South Africa", region: "Cape South Coast" },
-            
-            // WHITE WINES - AUSTRALIA & NEW ZEALAND
-            { name: "Australia - Margaret River Chardonnay", type: "white", country: "Australia", region: "Western Australia" },
-            { name: "Australia - Eden/Clare Valley Riesling", type: "white", country: "Australia", region: "South Australia" },
-            { name: "Australia - Adelaide Hills Sauvignon Blanc", type: "white", country: "Australia", region: "South Australia" },
-            { name: "New Zealand - Marlborough Sauvignon Blanc", type: "white", country: "New Zealand", region: "South Island" },
-            { name: "New Zealand - Central Otago/Marlborough Chardonnay", type: "white", country: "New Zealand", region: "South Island" },
-            
-            // SPARKLING WINES
-            { name: "Champagne - Non-Vintage Brut", type: "sparkling", country: "France", region: "Champagne" },
-            { name: "Champagne - Vintage", type: "sparkling", country: "France", region: "Champagne" },
-            { name: "Champagne - Blanc de Blancs", type: "sparkling", country: "France", region: "Champagne" },
-            { name: "Champagne - Rosé", type: "sparkling", country: "France", region: "Champagne" },
-            { name: "Crémant (Various regions)", type: "sparkling", country: "France", region: "Various" },
-            { name: "Prosecco DOCG", type: "sparkling", country: "Italy", region: "Veneto" },
-            { name: "Franciacorta DOCG", type: "sparkling", country: "Italy", region: "Lombardy" },
-            { name: "Cava DO", type: "sparkling", country: "Spain", region: "Catalonia" },
-            { name: "English Sparkling Wine", type: "sparkling", country: "England", region: "Various" },
-            { name: "California Sparkling Wine", type: "sparkling", country: "USA", region: "California" },
-            { name: "Australian Sparkling Wine (Traditional Method)", type: "sparkling", country: "Australia", region: "Various" },
-            
-            // FORTIFIED WINES
-            { name: "Sherry - Fino", type: "fortified", country: "Spain", region: "Andalusia" },
-            { name: "Sherry - Amontillado", type: "fortified", country: "Spain", region: "Andalusia" },
-            { name: "Sherry - Oloroso", type: "fortified", country: "Spain", region: "Andalusia" },
-            { name: "Sherry - Pedro Ximénez", type: "fortified", country: "Spain", region: "Andalusia" },
-            { name: "Port - Ruby", type: "fortified", country: "Portugal", region: "Douro" },
-            { name: "Port - Tawny", type: "fortified", country: "Portugal", region: "Douro" },
-            { name: "Port - Vintage", type: "fortified", country: "Portugal", region: "Douro" },
-            { name: "Madeira - Sercial/Verdelho/Bual/Malmsey", type: "fortified", country: "Portugal", region: "Madeira" },
-            { name: "Rutherglen Muscat", type: "fortified", country: "Australia", region: "Victoria" }
-        ];
-        
-        // Initialize variables
-        let selectedWines = JSON.parse(localStorage.getItem('selectedWines')) || [];
-        const resultDiv = document.getElementById('result');
-        const historyList = document.getElementById('historyList');
-        const categorySelect = document.getElementById('category');
-        const countrySelect = document.getElementById('country');
-        const regionSelect = document.getElementById('region');
-        
-        // Create lists for selection
-        const wineList = {
-            all: wineDatabase.map(wine => wine.name),
-            red: wineDatabase.filter(wine => wine.type === "red").map(wine => wine.name),
-            white: wineDatabase.filter(wine => wine.type === "white").map(wine => wine.name),
-            sparkling: wineDatabase.filter(wine => wine.type === "sparkling").map(wine => wine.name),
-            fortified: wineDatabase.filter(wine => wine.type === "fortified").map(wine => wine.name)
-        };
-        
-        // Populate countries dropdown
-        function populateCountries() {
-            const countries = [...new Set(wineDatabase.map(wine => wine.country))].sort();
-            countrySelect.innerHTML = '<option value="all">All Countries</option>';
-            
-            countries.forEach(country => {
-                const option = document.createElement('option');
-                option.value = country;
-                option.textContent = country;
-                countrySelect.appendChild(option);
-            });
-        }
-        
-        // Populate regions dropdown based on selected country
-        function populateRegions(selectedCountry) {
-            let regions;
-            
-            if (selectedCountry === 'all') {
-                regions = [...new Set(wineDatabase.map(wine => wine.region))].sort();
-            } else {
-                regions = [...new Set(wineDatabase
-                    .filter(wine => wine.country === selectedCountry)
-                    .map(wine => wine.region))].sort();
-            }
-            
-            regionSelect.innerHTML = '<option value="all">All Regions</option>';
-            
-            regions.forEach(region => {
-                const option = document.createElement('option');
-                option.value = region;
-                option.textContent = region;
-                regionSelect.appendChild(option);
-            });
-        }
-        
-        // Initialize dropdowns
-        populateCountries();
-        populateRegions('all');
-        
-        // Handle country change
-        countrySelect.addEventListener('change', function() {
-            populateRegions(this.value);
-        });
-        
-        // Generate random wine button event
-        document.getElementById('generateBtn').addEventListener('click', function() {
-            const selectedType = categorySelect.value;
-            const selectedCountry = countrySelect.value;
-            const selectedRegion = regionSelect.value;
-            
-            // Filter wines based on selections
-            let filteredWines = wineDatabase;
-            
-            if (selectedType !== 'all') {
-                filteredWines = filteredWines.filter(wine => wine.type === selectedType);
-            }
-            
-            if (selectedCountry !== 'all') {
-                filteredWines = filteredWines.filter(wine => wine.country === selectedCountry);
-            }
-            
-            if (selectedRegion !== 'all') {
-                filteredWines = filteredWines.filter(wine => wine.region === selectedRegion);
-            }
-            
-            // Get wine names and filter out already selected ones
-            const wineNames = filteredWines.map(wine => wine.name);
-            const availableWines = wineNames.filter(wine => !selectedWines.includes(wine));
-            
-            if (availableWines.length === 0) {
-                resultDiv.innerHTML = "All wines from this category have been selected! Reset history to start over.";
-                return;
-            }
-            
-            const randomIndex = Math.floor(Math.random() * availableWines.length);
-            const randomWine = availableWines[randomIndex];
-            
-            resultDiv.innerHTML = `<strong>${randomWine}</strong>`;
-            
-            // Add to history
-            selectedWines.push(randomWine);
-            localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
-            
-            // Update history list
-            updateHistoryList();
-        });
-        
-        // Reset history button event
-        document.getElementById('resetBtn').addEventListener('click', function() {
-            selectedWines = [];
-            localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
-            resultDiv.innerHTML = "Your randomly selected wine will appear here";
-            updateHistoryList();
-        });
-        
-        // Function to update history list
-        function updateHistoryList() {
-            if (selectedWines.length === 0) {
-                historyList.innerHTML = '<div class="history-item">No wines selected yet</div>';
-                return;
-            }
-            
-            historyList.innerHTML = '';
-            selectedWines.slice().reverse().forEach(wine => {
-                const item = document.createElement('div');
-                item.className = 'history-item';
-                item.textContent = wine;
-                historyList.appendChild(item);
-            });
-        }
-        
-        // Tab functionality
-        function openTab(tabName) {
-            const tabContents = document.getElementsByClassName('tab-content');
-            for (let i = 0; i < tabContents.length; i++) {
-                tabContents[i].classList.remove('active');
-            }
-            
-            const tabs = document.getElementsByClassName('tab');
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove('active');
-            }
-            
-            document.getElementById(tabName).classList.add('active');
-            
-            // Find the tab that was clicked and make it active
-            for (let i = 0; i < tabs.length; i++) {
-                if (tabs[i].innerText.toLowerCase().includes(tabName)) {
-                    tabs[i].classList.add('active');
-                }
-            }
-            
-            // If browse tab is opened, populate the wine list
-            if (tabName === 'browse') {
-                populateWineList();
-            }
-        }
-        
-        // Populate the wine list for browsing
-        function populateWineList() {
-            const wineListContainer = document.getElementById('wineList');
-            wineListContainer.innerHTML = '';
-            
-            // Group by country
-            const countries = [...new Set(wineDatabase.map(wine => wine.country))].sort();
-            
-            countries.forEach(country => {
-                const countryWines = wineDatabase.filter(wine => wine.country === country);
-                
-                // Create country header
-                const countryHeader = document.createElement('div');
-                countryHeader.className = 'wine-region';
-                countryHeader.textContent = country;
-                wineListContainer.appendChild(countryHeader);
-                
-                // Add all wines from this country
-                countryWines.forEach(wine => {
-                    const wineItem = document.createElement('div');
-                    wineItem.className = 'history-item';
-                    wineItem.textContent = `${wine.name} (${wine.type})`;
-                    wineListContainer.appendChild(wineItem);
-                });
-            });
-        }
-        
-        // Initialize history list on page load
-        updateHistoryList();
-    </script>
+  let wineDatabase = [];
+  let selectedWines = JSON.parse(localStorage.getItem('selectedWines')) || [];
+
+  // Fetch wine data from JSON file
+  fetch('wine-data.json')
+    .then(response => response.json())
+    .then(data => {
+      wineDatabase = data;
+      initApp();
+    })
+    .catch(err => console.error('Failed to load wine data:', err));
+
+  function initApp() {
+    const resultDiv = document.getElementById('result');
+    const historyList = document.getElementById('historyList');
+    const categorySelect = document.getElementById('category');
+    const countrySelect = document.getElementById('country');
+    const regionSelect = document.getElementById('region');
+
+    // Populate country & region dropdowns
+    populateCountries();
+    populateRegions('all');
+    countrySelect.addEventListener('change', function() {
+      populateRegions(this.value);
+    });
+
+    document.getElementById('generateBtn').addEventListener('click', generateWine);
+    document.getElementById('resetBtn').addEventListener('click', resetHistory);
+
+    updateHistoryList();
+  }
+
+  function populateCountries() {
+    const countries = [...new Set(wineDatabase.map(w => w.country))].sort();
+    countrySelect.innerHTML = '<option value="all">All Countries</option>';
+    countries.forEach(c => {
+      const o = document.createElement('option');
+      o.value = c;
+      o.textContent = c;
+      countrySelect.appendChild(o);
+    });
+  }
+
+  function populateRegions(country) {
+    let regions = country === 'all'
+      ? [...new Set(wineDatabase.map(w => w.region))]
+      : [...new Set(wineDatabase.filter(w => w.country === country).map(w => w.region))];
+    regions.sort();
+
+    regionSelect.innerHTML = '<option value="all">All Regions</option>';
+    regions.forEach(r => {
+      const o = document.createElement('option');
+      o.value = r;
+      o.textContent = r;
+      regionSelect.appendChild(o);
+    });
+  }
+
+  function generateWine() {
+    const type = categorySelect.value;
+    const country = countrySelect.value;
+    const region = regionSelect.value;
+
+    let filtered = wineDatabase
+      .filter(w => (type === 'all' || w.type === type))
+      .filter(w => (country === 'all' || w.country === country))
+      .filter(w => (region === 'all' || w.region === region));
+
+    const available = filtered.map(w => w.sub_region).filter(n => !selectedWines.includes(n));
+    if (!available.length) {
+      resultDiv.textContent = "All wines from this category have been selected! Reset history to start over.";
+      return;
+    }
+    const choice = available[Math.floor(Math.random() * available.length)];
+    resultDiv.innerHTML = `<strong>${choice}</strong>`;
+    selectedWines.push(choice);
+    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+    updateHistoryList();
+  }
+
+  function resetHistory() {
+    selectedWines = [];
+    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+    resultDiv.textContent = "Your randomly selected wine will appear here";
+    updateHistoryList();
+  }
+
+  function updateHistoryList() {
+    if (!selectedWines.length) {
+      historyList.innerHTML = '<div class="history-item">No wines selected yet</div>';
+      return;
+    }
+    historyList.innerHTML = '';
+    selectedWines.slice().reverse().forEach(w => {
+      const item = document.createElement('div');
+      item.className = 'history-item';
+      item.textContent = w;
+      historyList.appendChild(item);
+    });
+  }
+
+  // Tab functionality remains unchanged...
+  function openTab(name) { /* ... */ }
+  function populateWineList() { /* ... */ }
+</script>
+
 </body>
 </html>
