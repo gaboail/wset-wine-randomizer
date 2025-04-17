@@ -123,47 +123,38 @@
 <body>
     <div class="container">
         <h1>WSET Level 3 Wine Randomizer</h1>
-        
         <div class="tabs">
             <div class="tab active" onclick="openTab('randomizer')">Wine Randomizer</div>
             <div class="tab" onclick="openTab('browse')">Browse Wine List</div>
         </div>
-        
         <div id="randomizer" class="tab-content active">
             <h2>Random Wine Generator</h2>
-            
             <div class="category-select">
                 <label for="category">Select Wine Type:</label>
                 <select id="category">
                     <option value="all">All WSET Level 3 Wines</option>
                     <option value="red">Red Wines</option>
                     <option value="white">White Wines</option>
+                    <option value="rosé">Rosé Wines</option>
                     <option value="sparkling">Sparkling Wines</option>
                     <option value="fortified">Fortified Wines</option>
                 </select>
             </div>
-            
             <div class="category-select">
                 <label for="country">Select Country:</label>
                 <select id="country">
                     <option value="all">All Countries</option>
                 </select>
             </div>
-            
             <div class="category-select">
                 <label for="region">Select Region:</label>
                 <select id="region">
                     <option value="all">All Regions</option>
                 </select>
             </div>
-    
-            <div class="result" id="result">
-                Your randomly selected wine will appear here
-            </div>
-    
+            <div class="result" id="result">Your randomly selected wine will appear here</div>
             <button id="generateBtn">Generate Random Wine</button>
             <button id="resetBtn">Reset History</button>
-    
             <div class="history">
                 <h3>Previously Selected Wines</h3>
                 <div class="history-list" id="historyList">
@@ -171,123 +162,121 @@
                 </div>
             </div>
         </div>
-        
         <div id="browse" class="tab-content">
             <h2>WSET Level 3 Wine List</h2>
             <p>This is a complete list of wines from the WSET Level 3 syllabus.</p>
-            
-            <div class="wine-list" id="wineList">
-                <!-- This will be populated dynamically by JavaScript -->
-            </div>
+            <div class="wine-list" id="wineList"></div>
         </div>
     </div>
-
     <script>
-  let wineDatabase = [];
-  let selectedWines = JSON.parse(localStorage.getItem('selectedWines')) || [];
-
-  // Fetch wine data from JSON file
-  fetch('wine-data.json')
-    .then(response => response.json())
-    .then(data => {
-      wineDatabase = data;
-      initApp();
-    })
-    .catch(err => console.error('Failed to load wine data:', err));
-
-  function initApp() {
-    const resultDiv = document.getElementById('result');
-    const historyList = document.getElementById('historyList');
-    const categorySelect = document.getElementById('category');
-    const countrySelect = document.getElementById('country');
-    const regionSelect = document.getElementById('region');
-
-    // Populate country & region dropdowns
-    populateCountries();
-    populateRegions('all');
-    countrySelect.addEventListener('change', function() {
-      populateRegions(this.value);
-    });
-
-    document.getElementById('generateBtn').addEventListener('click', generateWine);
-    document.getElementById('resetBtn').addEventListener('click', resetHistory);
-
-    updateHistoryList();
-  }
-
-  function populateCountries() {
-    const countries = [...new Set(wineDatabase.map(w => w.country))].sort();
-    countrySelect.innerHTML = '<option value="all">All Countries</option>';
-    countries.forEach(c => {
-      const o = document.createElement('option');
-      o.value = c;
-      o.textContent = c;
-      countrySelect.appendChild(o);
-    });
-  }
-
-  function populateRegions(country) {
-    let regions = country === 'all'
-      ? [...new Set(wineDatabase.map(w => w.region))]
-      : [...new Set(wineDatabase.filter(w => w.country === country).map(w => w.region))];
-    regions.sort();
-
-    regionSelect.innerHTML = '<option value="all">All Regions</option>';
-    regions.forEach(r => {
-      const o = document.createElement('option');
-      o.value = r;
-      o.textContent = r;
-      regionSelect.appendChild(o);
-    });
-  }
-
-  function generateWine() {
-    const type = categorySelect.value;
-    const country = countrySelect.value;
-    const region = regionSelect.value;
-
-    let filtered = wineDatabase
-      .filter(w => (type === 'all' || w.type === type))
-      .filter(w => (country === 'all' || w.country === country))
-      .filter(w => (region === 'all' || w.region === region));
-
-    const available = filtered.map(w => w.sub_region).filter(n => !selectedWines.includes(n));
-    if (!available.length) {
-      resultDiv.textContent = "All wines from this category have been selected! Reset history to start over.";
-      return;
-    }
-    const choice = available[Math.floor(Math.random() * available.length)];
-    resultDiv.innerHTML = `<strong>${choice}</strong>`;
-    selectedWines.push(choice);
-    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
-    updateHistoryList();
-  }
-
-  function resetHistory() {
-    selectedWines = [];
-    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
-    resultDiv.textContent = "Your randomly selected wine will appear here";
-    updateHistoryList();
-  }
-
-  function updateHistoryList() {
-    if (!selectedWines.length) {
-      historyList.innerHTML = '<div class="history-item">No wines selected yet</div>';
-      return;
-    }
-    historyList.innerHTML = '';
-    selectedWines.slice().reverse().forEach(w => {
-      const item = document.createElement('div');
-      item.className = 'history-item';
-      item.textContent = w;
-      historyList.appendChild(item);
-    });
-  }
-
-  // Tab functionality remains unchanged...
-  function openTab(name) { /* ... */ }
-  function populateWineList() { /* ... */ }
-</script>
-
+        let wineDatabase = [];
+        let selectedWines = JSON.parse(localStorage.getItem('selectedWines')) || [];
+        const categorySelect = document.getElementById('category');
+        const countrySelect = document.getElementById('country');
+        const regionSelect = document.getElementById('region');
+        const resultDiv = document.getElementById('result');
+        const historyList = document.getElementById('historyList');
+        // Load wine data
+        fetch('wine-data.json')
+            .then(res => res.json())
+            .then(data => { wineDatabase = data; initApp(); })
+            .catch(err => console.error('Failed to load wine data:', err));
+        function initApp() {
+            populateCountries();
+            populateRegions('all');
+            countrySelect.addEventListener('change', () => populateRegions(countrySelect.value));
+            document.getElementById('generateBtn').addEventListener('click', generateWine);
+            document.getElementById('resetBtn').addEventListener('click', resetHistory);
+            updateHistoryList();
+        }
+        function populateCountries() {
+            const countries = [...new Set(wineDatabase.map(w => w.country))].sort();
+            countrySelect.innerHTML = '<option value="all">All Countries</option>';
+            countries.forEach(c => {
+                const o = document.createElement('option'); o.value = c; o.textContent = c;
+                countrySelect.appendChild(o);
+            });
+        }
+        function populateRegions(selectedCountry) {
+            let regions = selectedCountry === 'all'
+                ? [...new Set(wineDatabase.map(w => w.region))]
+                : [...new Set(wineDatabase.filter(w => w.country === selectedCountry).map(w => w.region))];
+            regions.sort();
+            regionSelect.innerHTML = '<option value="all">All Regions</option>';
+            regions.forEach(r => {
+                const o = document.createElement('option'); o.value = r; o.textContent = r;
+                regionSelect.appendChild(o);
+            });
+        }
+        function generateWine() {
+            const type = categorySelect.value;
+            const country = countrySelect.value;
+            const region = regionSelect.value;
+            let filtered = wineDatabase
+                .filter(w => type === 'all' || w.type === type)
+                .filter(w => country === 'all' || w.country === country)
+                .filter(w => region === 'all' || w.region === region);
+            const available = filtered.map(w => w.sub_region).filter(n => !selectedWines.includes(n));
+            if (!available.length) {
+                resultDiv.textContent = 'All wines from this category have been selected! Reset history to start over.';
+                return;
+            }
+            const choice = available[Math.floor(Math.random() * available.length)];
+            resultDiv.innerHTML = `<strong>${choice}</strong>`;
+            selectedWines.push(choice);
+            localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+            updateHistoryList();
+        }
+        function resetHistory() {
+            selectedWines = [];
+            localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+            resultDiv.textContent = 'Your randomly selected wine will appear here';
+            updateHistoryList();
+        }
+        function updateHistoryList() {
+            if (!selectedWines.length) {
+                historyList.innerHTML = '<div class="history-item">No wines selected yet</div>';
+                return;
+            }
+            historyList.innerHTML = '';
+            selectedWines.slice().reverse().forEach(w => {
+                const item = document.createElement('div'); item.className = 'history-item';
+                item.textContent = w;
+                historyList.appendChild(item);
+            });
+        }
+        function openTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            Array.from(document.getElementsByClassName('tab')).find(t => t.innerText.toLowerCase().includes(tabName)).classList.add('active');
+            if (tabName === 'browse') populateWineList();
+        }
+        function populateWineList() {
+            const wineListContainer = document.getElementById('wineList');
+            wineListContainer.innerHTML = '';
+            const countries = [...new Set(wineDatabase.map(w => w.country))].sort();
+            countries.forEach(country => {
+                const countryHeader = document.createElement('div');
+                countryHeader.className = 'wine-region'; countryHeader.textContent = country;
+                wineListContainer.appendChild(countryHeader);
+                const byCountry = wineDatabase.filter(w => w.country === country);
+                const regions = [...new Set(byCountry.map(w => w.region))].sort();
+                regions.forEach(region => {
+                    const regionHeader = document.createElement('div');
+                    regionHeader.className = 'wine-region'; regionHeader.style.marginLeft = '10px';
+                    regionHeader.textContent = region;
+                    wineListContainer.appendChild(regionHeader);
+                    const byRegion = byCountry.filter(w => w.region === region).sort((a,b) => a.sub_region.localeCompare(b.sub_region));
+                    byRegion.forEach(wine => {
+                        const item = document.createElement('div'); item.className = 'history-item';
+                        item.style.marginLeft = '20px';
+                        item.textContent = `${wine.sub_region} (${wine.type})`;
+                        wineListContainer.appendChild(item);
+                    });
+                });
+            });
+        }
+    </script>
 </body>
 </html>
