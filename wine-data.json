@@ -1,0 +1,1586 @@
+[
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Bordeaux",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Bordeaux Sup\u00e9rieur",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "C\u00f4tes de Bordeaux",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Entre-Deux-Mers",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "M\u00e9doc",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Haut M\u00e9doc",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Saint-Est\u00e8phe",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Pauillac",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Margaux",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Saint-Julien",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Graves",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Pessac-L\u00e9ognan",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Saint \u00c9milion",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Saint-\u00c9milion Grand Cru",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Pomerol",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Sauternes",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Bordeaux",
+    "sub_region": "Barsac",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "Bergerac",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "Monbazillac",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "Cahors",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "Madiran",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "Juran\u00e7on",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Dordogne & SW France",
+    "sub_region": "C\u00f4tes de Gascogne",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Bourgogne",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Chablis",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Bourgogne C\u00f4te d'Or",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Bourgogne Hautes C\u00f4tes de Nuits",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "C\u00f4te de Nuits-Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Gevrey-Chambertin",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Vougeot",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Vosne-Roman\u00e9e",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Nuits-Saint-Georges",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Bourgogne Hautes C\u00f4tes de Beaune",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "C\u00f4te de Beaune-Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Aloxe-Corton",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Beaune",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Pommard",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Volnay",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Meursault",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Puligny-Montrachet",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Chassagne-Montrachet",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Bourgogne C\u00f4te Chalonnaise",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Rully",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Mercurey",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Givry",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Montagny",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "M\u00e2con",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "M\u00e2con Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Pouilly-Fuiss\u00e9",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Burgundy",
+    "sub_region": "Saint-V\u00e9ran",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Muscadet",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Muscadet S\u00e8vre et Maine",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Anjou",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Coteaux du Layon",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Savenni\u00e8res",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Saumur",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Saumur-Champigny",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Vouvray",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Touraine",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Bourgueil",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Chinon",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Sancerre",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Pouilly-Fum\u00e9",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Menetou-Salon",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Ros\u00e9 d\u2019Anjou",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Cabernet d\u2019Anjou",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Loire",
+    "sub_region": "Ros\u00e9 de Loire",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "C\u00f4tes du Rh\u00f4ne",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "C\u00f4tes du Rh\u00f4ne Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "C\u00f4te R\u00f4tie",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Condrieu",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Saint-Joseph",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Hermitage",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Crozes-Hermitage",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Cornas",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Ch\u00e2teauneuf-du-Pape",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Gigondas",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Vacqueyras",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Lirac",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Rh\u00f4ne",
+    "sub_region": "Tavel",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Pays d\u2019Oc",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Languedoc",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Minervois",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Fitou",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Corbi\u00e8res",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "Picpoul de Pinet",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "C\u00f4tes du Roussillon",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Languedoc-Roussillon",
+    "sub_region": "C\u00f4tes du Roussillon Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Provence",
+    "sub_region": "Bandol",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Provence",
+    "sub_region": "C\u00f4tes de Provence",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Mosel",
+    "sub_region": "Bernkastel",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Mosel",
+    "sub_region": "Wehlen",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Mosel",
+    "sub_region": "Piesport",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Nahe",
+    "sub_region": "Schlossb\u00f6ckelheim",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Rheingau",
+    "sub_region": "R\u00fcdesheim",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Rheingau",
+    "sub_region": "Johannisberg",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Rheinhessen",
+    "sub_region": "Nierstein",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Pfalz",
+    "sub_region": "Forst",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Pfalz",
+    "sub_region": "Deidesheim",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Baden",
+    "sub_region": "Baden",
+    "type": NaN
+  },
+  {
+    "country": "Germany",
+    "region": "Franken",
+    "sub_region": "Franken",
+    "type": NaN
+  },
+  {
+    "country": "Austria",
+    "region": "Nieder\u00f6sterreich",
+    "sub_region": "Wachau",
+    "type": NaN
+  },
+  {
+    "country": "Austria",
+    "region": "Nieder\u00f6sterreich",
+    "sub_region": "Weinviertel",
+    "type": NaN
+  },
+  {
+    "country": "Austria",
+    "region": "Burgenland",
+    "sub_region": "Burgenland",
+    "type": NaN
+  },
+  {
+    "country": "Hungary",
+    "region": "Tokaj",
+    "sub_region": "Tokaj",
+    "type": NaN
+  },
+  {
+    "country": "Greece",
+    "region": "Greece",
+    "sub_region": "Naoussa",
+    "type": NaN
+  },
+  {
+    "country": "Greece",
+    "region": "Greece",
+    "sub_region": "Nemea",
+    "type": NaN
+  },
+  {
+    "country": "Greece",
+    "region": "Greece",
+    "sub_region": "Santorini",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Trentino-Alto Adige",
+    "sub_region": "Trentino",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Trentino-Alto Adige",
+    "sub_region": "Alto Adige",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Friuli-Venezia Giulia",
+    "sub_region": "Collio",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Friuli-Venezia Giulia",
+    "sub_region": "Colli Orientali",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Friuli-Venezia Giulia",
+    "sub_region": "Friuli Grave",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Pinot Grigio delle Venezie",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Veneto",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Valpolicella",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Valpolicella Classico",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Amarone della Valpolicella",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Recioto della Valpolicella",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Valpolicella Ripasso",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Soave",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Veneto",
+    "sub_region": "Soave Classico",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Piemonte",
+    "sub_region": "Barolo",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Piemonte",
+    "sub_region": "Barbaresco",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Piemonte",
+    "sub_region": "Barbera d\u2019Asti",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Piemonte",
+    "sub_region": "Dolcetto d\u2019Alba",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Piemonte",
+    "sub_region": "Gavi",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Toscana",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Chianti",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Chianti Classico",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Bolgheri",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Brunello di Montalcino",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Tuscany",
+    "sub_region": "Vino Nobile di Montepulciano",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Marche",
+    "sub_region": "Verdicchio dei Castelli di Jesi",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Umbria",
+    "sub_region": "Orvieto",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Lazio",
+    "sub_region": "Frascati",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Abruzzo",
+    "sub_region": "Montepulciano d\u2019Abruzzo",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Campania",
+    "sub_region": "Taurasi",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Campania",
+    "sub_region": "Fiano di Avellino",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Campania",
+    "sub_region": "Greco di Tufo",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Puglia",
+    "sub_region": "Puglia",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Puglia",
+    "sub_region": "Salice Salentino",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Basilicata",
+    "sub_region": "Aglianico del Vulture",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Sicily",
+    "sub_region": "Sicilia",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Sicily",
+    "sub_region": "Terre di Sicilia",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Sicily",
+    "sub_region": "Terre Siciliane",
+    "type": NaN
+  },
+  {
+    "country": "Italy",
+    "region": "Sicily",
+    "sub_region": "Etna",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Upper Ebro",
+    "sub_region": "Rioja",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Upper Ebro",
+    "sub_region": "Navarra",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Upper Ebro",
+    "sub_region": "Calatayud",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Upper Ebro",
+    "sub_region": "Cari\u00f1ena",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Catalunya",
+    "sub_region": "Priorat",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Catalunya",
+    "sub_region": "Catalunya",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Catalunya",
+    "sub_region": "Pened\u00e8s",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Duero Valley",
+    "sub_region": "Ribera del Duero",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Duero Valley",
+    "sub_region": "Toro",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Duero Valley",
+    "sub_region": "Rueda",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The North West",
+    "sub_region": "R\u00edas Baixas",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The North West",
+    "sub_region": "Bierzo",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Levante",
+    "sub_region": "Valencia",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Levante",
+    "sub_region": "Jumilla",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "The Levante",
+    "sub_region": "Yecla",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Castilla-La Mancha",
+    "sub_region": "La Mancha",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Castilla-La Mancha",
+    "sub_region": "Valdepe\u00f1as",
+    "type": NaN
+  },
+  {
+    "country": "Spain",
+    "region": "Castilla y Le\u00f3n",
+    "sub_region": "VdlT",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Vinho Verde",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Douro",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "D\u00e3o",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Bairrada",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Alentejo",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Lisboa",
+    "type": NaN
+  },
+  {
+    "country": "Portugal",
+    "region": "Portugal",
+    "sub_region": "Alentejano",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "California",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Napa County",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Napa Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Rutherford",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Oakville",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Stags Leap District",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Howell Mountain",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Mount Veeder",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Los Carneros",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Saint Helena",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Calistoga",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Sonoma County",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Russian River Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Alexander Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Dry Creek Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Sonoma Coast",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Mendocino County",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Santa Cruz Mountains",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Monterey",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Paso Robles",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Santa Maria Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "California",
+    "sub_region": "Lodi",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "Oregon",
+    "sub_region": "Willamette Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "Washington",
+    "sub_region": "Columbia Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "Washington",
+    "sub_region": "Yakima Valley",
+    "type": NaN
+  },
+  {
+    "country": "USA",
+    "region": "New York",
+    "sub_region": "Finger Lakes",
+    "type": NaN
+  },
+  {
+    "country": "Canada",
+    "region": "Ontario",
+    "sub_region": "Niagara Peninsula",
+    "type": NaN
+  },
+  {
+    "country": "Canada",
+    "region": "British Columbia",
+    "sub_region": "Okanagan Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Coquimbo Region",
+    "sub_region": "Elqui Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Coquimbo Region",
+    "sub_region": "Limar\u00ed Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Aconcagua Region",
+    "sub_region": "Casablanca Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Aconcagua Region",
+    "sub_region": "San Antonio Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Aconcagua Region",
+    "sub_region": "Leyda Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Aconcagua Region",
+    "sub_region": "Aconcagua Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Central Valley Region",
+    "sub_region": "Cachapoal Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Central Valley Region",
+    "sub_region": "Colchagua Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Central Valley Region",
+    "sub_region": "Maipo Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Central Valley Region",
+    "sub_region": "Curic\u00f3 Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Central Valley Region",
+    "sub_region": "Maule Valley",
+    "type": NaN
+  },
+  {
+    "country": "Chile",
+    "region": "Southern Region",
+    "sub_region": "Southern Region",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "Salta",
+    "sub_region": "Cafayate",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "San Juan",
+    "sub_region": "San Juan",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "Mendoza",
+    "sub_region": "Uco Valley",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "Mendoza",
+    "sub_region": "Luj\u00e1n de Cuyo",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "Mendoza",
+    "sub_region": "Maip\u00fa",
+    "type": NaN
+  },
+  {
+    "country": "Argentina",
+    "region": "Patagonia",
+    "sub_region": "Patagonia",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Western Cape",
+    "sub_region": "Western Cape",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Coastal Region",
+    "sub_region": "Stellenbosch",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Coastal Region",
+    "sub_region": "Paarl",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Coastal Region",
+    "sub_region": "Constantia",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Coastal Region",
+    "sub_region": "Durbanville",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Coastal Region",
+    "sub_region": "Swartland",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Breede River Valley",
+    "sub_region": "Worcester",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Breede River Valley",
+    "sub_region": "Robertson",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Cape South Coast",
+    "sub_region": "Walker Bay",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Cape South Coast",
+    "sub_region": "Hemel-en-Aarde Wards",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Cape South Coast",
+    "sub_region": "Elim",
+    "type": NaN
+  },
+  {
+    "country": "South Africa",
+    "region": "Cape South Coast",
+    "sub_region": "Elgin",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Eastern Australia",
+    "sub_region": "Murray-Darling",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Eastern Australia",
+    "sub_region": "Riverina",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Eastern Australia",
+    "sub_region": "Riverland",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Barossa",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Barossa Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Eden Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Clare Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Adelaide Hills",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "McLaren Vale",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "South Australia",
+    "sub_region": "Coonawarra",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Victoria",
+    "sub_region": "Yarra Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Victoria",
+    "sub_region": "Geelong",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Victoria",
+    "sub_region": "Mornington Peninsula",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Victoria",
+    "sub_region": "Heathcote",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Victoria",
+    "sub_region": "Goulburn Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "New South Wales",
+    "sub_region": "Hunter Valley",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Tasmania",
+    "sub_region": "Tasmania",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Western Australia",
+    "sub_region": "Margaret River",
+    "type": NaN
+  },
+  {
+    "country": "Australia",
+    "region": "Western Australia",
+    "sub_region": "Great Southern",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "North Island",
+    "sub_region": "Gisborne",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "North Island",
+    "sub_region": "Hawke\u2019s Bay",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "North Island",
+    "sub_region": "Martinborough",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "South Island",
+    "sub_region": "Marlborough",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "South Island",
+    "sub_region": "Nelson",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "South Island",
+    "sub_region": "Canterbury",
+    "type": NaN
+  },
+  {
+    "country": "New Zealand",
+    "region": "South Island",
+    "sub_region": "Central Otago",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Beaujolais",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Beaujolais Villages",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Brouilly",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Fleurie",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Morgon",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Beaujolais",
+    "sub_region": "Moulin-\u00e0-Vent",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Alsace",
+    "sub_region": "Alsace",
+    "type": NaN
+  },
+  {
+    "country": "France",
+    "region": "Alsace",
+    "sub_region": "Alsace Grand Cru",
+    "type": NaN
+  }
+]
