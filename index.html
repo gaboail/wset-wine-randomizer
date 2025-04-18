@@ -208,24 +208,37 @@
                 regionSelect.appendChild(o);
             });
         }
-        function generateWine() {
-            const type = categorySelect.value;
-            const country = countrySelect.value;
-            const region = regionSelect.value;
-            let filtered = wineDatabase
-                .filter(w => type === 'all' || w.type === type)
-                .filter(w => country === 'all' || w.country === country)
-                .filter(w => region === 'all' || w.region === region);
-            const available = filtered.map(w => w.sub_region).filter(n => !selectedWines.includes(n));
-            if (!available.length) {
-                resultDiv.textContent = 'All wines from this category have been selected! Reset history to start over.';
-                return;
-            }
-            const choice = available[Math.floor(Math.random() * available.length)];
-            resultDiv.innerHTML = `<strong>${choice}</strong>`;
-            selectedWines.push(choice);
-            localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
-            updateHistoryList();
+         function generateWine() {
+    const type    = categorySelect.value;
+    const country = countrySelect.value;
+    const region  = regionSelect.value;
+
+    // Filter down to full wine objects
+    let filtered = wineDatabase
+      .filter(w => type    === 'all' || w.type    === type)
+      .filter(w => country === 'all' || w.country === country)
+      .filter(w => region  === 'all' || w.region  === region);
+
+    // Exclude ones already chosen
+    const available = filtered.filter(w => !selectedWines.includes(w.sub_region));
+
+    if (!available.length) {
+      resultDiv.textContent = 
+        'All wines from this category have been selected! Reset history to start over.';
+      return;
+    }
+
+    // Pick a random wine object
+    const pick = available[Math.floor(Math.random() * available.length)];
+
+    // Display country › region › sub-region (type)
+    resultDiv.innerHTML = 
+      `<strong>${pick.country} » ${pick.region} » ${pick.sub_region} (${pick.type})</strong>`;
+
+    // Save its sub_region as your history key (you can switch to another unique field if you prefer)
+    selectedWines.push(pick.sub_region);
+    localStorage.setItem('selectedWines', JSON.stringify(selectedWines));
+    updateHistoryList();
         }
         function resetHistory() {
             selectedWines = [];
